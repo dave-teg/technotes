@@ -3,7 +3,7 @@ import { setCredentials } from "../../features/auth/authSlice"
 import { setSessionExpired } from "../../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://technotes-api.onrender.com",
+  baseUrl: "https://technotes-api-dt.onrender.com",
   validateStatus: (response, result) => {
     return response.status >= 200 && response.status < 300 && !result?.isError;
   },
